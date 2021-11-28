@@ -44,10 +44,10 @@ int createMatrix(int mat[10][10]){
 int isThereAPath(int mat[10][10],int i, int j){
     int path = mat[i][j];
     if(path != 0){
-        printf("True");
+        printf("True\n");
         return 1;
     }else{
-        printf("False");
+        printf("False\n");
         return 0;
     }
 }
@@ -56,9 +56,9 @@ int sizeOfPath(int mat[10][10], int i, int j){
     int pathSize = mat[i][j];
     if(pathSize == 0){
         int noPath = -1;
-        printf("%d", noPath);
+        printf("%d\n", noPath);
     }else{
-        printf("%d", pathSize);
+        printf("%d\n", pathSize);
     }
     return 0;
 }
