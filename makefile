@@ -6,12 +6,12 @@ FLAGS= -Wall -g
 
 
 
-all: myMatLib main
+all: myMatLib connections
 
 myMatLib: my_mat.a
 
-main: main.o my_mat.a
-	$(CC) $(FLAGS) -o main main.o my_mat.a
+connections: main.o my_mat.a
+	$(CC) $(FLAGS) -o connections main.o my_mat.a
 
 my_mat.a: my_mat.o
 	$(AR) -rcs my_mat.a my_mat.o
