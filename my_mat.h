@@ -4,9 +4,9 @@
 
 #ifndef UNTITLED2_MY_MAT_H
 #define UNTITLED2_MY_MAT_H
-int createMatrix(int mat[10][10]);
+void createMatrix();
 
-int isThereAPath(int mat[10][10],int i, int j);
+int isThereAPath(int i, int j);
 
-int sizeOfPath(int mat[10][10], int i, int j);
+int sizeOfPath( int i, int j);
 #endif //UNTITLED2_MY_MAT_H
