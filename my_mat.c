@@ -3,19 +3,6 @@
 //
 #include <stdio_ext.h>
 int mat[10][10];
-int minNum(int i, int j){
-    if(i == 0){
-        return j;
-    }
-    else if(j == 0){
-        return i;
-    }
-    else if(i<j){
-        return i;
-    }else{
-        return j;
-    }
-}
 
 void createMatrix() {
     int toInsert;
@@ -24,6 +11,9 @@ void createMatrix() {
             scanf("%d", &toInsert);
             mat[i][j] = toInsert;
         }
+    }
+    for (int i = 0; i < 10 ; ++i) {
+        mat[i][i] =0;
     }
     for (int k = 0; k < 10; ++k) {
         for (int i = 0; i < 10; ++i) {
@@ -37,10 +27,6 @@ void createMatrix() {
                 }
             }
         }
-
-    }
-    for (int i = 0; i < 10 ; ++i) {
-        mat[i][i] =0;
     }
 }
 
