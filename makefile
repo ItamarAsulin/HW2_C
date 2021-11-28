@@ -25,4 +25,4 @@ main.o: main.c
 
 
 clean:
-	rm -f *.o *.a main
+	rm -f *.o *.a connections
